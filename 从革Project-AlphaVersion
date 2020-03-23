@@ -1,0 +1,556 @@
+#甚是想您，故做此辑
+#公元2020年3月17-22日 从革做
+#此版本为内测版Alpha
+import turtle as T
+import time as t
+import os, sys
+ST=t.ctime()
+print(ST)
+t.sleep(0.78)
+print("注意：此程序大量用到Enter键，")
+print("如需按Enter键以推动文本，请且只请每次按一次Enter键，否则会导致bug")
+input()
+Name_Identity = 1
+while Name_Identity == 1:
+	t.sleep(0.7)
+	Name = input("身份验证，我最常叫宁的昵称：")
+	if Name in ['jy','zj','bb','xy','可心','ys','wg']:
+		print("昵称"+Name+"通过验证")
+		break
+	else:
+		t.sleep(1.5)
+		print("此昵称无授权")
+	continue
+print()
+t.sleep(0.21)
+print()
+t.sleep(1.77)
+print('         ')
+print("检测为一级用户")
+t.sleep(0.4)
+print("检测为", Name)
+t.sleep(0.7)
+print('         ')
+Only_kx = 2
+while Only_kx == 2:
+	if Name in ["可心"]:
+		break
+	else:
+		print("用户 {:2} 程序开发中...".format(Name), "敬请期待。")
+		t.sleep(6)
+		sys.exit()
+t.sleep(0.78)
+print("已转为日语模式，不用谢嗷")
+t.sleep(1.33)
+
+Fir_kotoba = "まずは，あずさちゃんが从革プロジェクトに参ることを歓迎する，プレゼントの図像は解けましたよ。"
+Shuwei_Fir = len(Fir_kotoba) + 1
+for i in range(Shuwei_Fir):
+	print("\r" + Fir_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end=""), input()
+
+Sec_kotoba = "ベター バージョンだけれど，最高の体験を上げるのつもりが心に持っています。"
+Shuwei_Sec = len(Sec_kotoba) + 1
+for i in range(Shuwei_Sec):
+	print("\r" + Sec_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end=""), input()
+
+Thi_kotoba = "演算中.."#更新：反复刷新
+Shuwei_Thi = len(Thi_kotoba) + 1
+for i in range(Shuwei_Thi):
+	print("\r" + Thi_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end=""), t.sleep(0.655)
+
+For_kotoba = "以下の常微分方程式を解けて，そして思いを寄せた言葉とプレゼントの図像をもらって下さい。"
+Shuwei_For = len(For_kotoba) + 1
+for i in range(Shuwei_For):
+	print("\r" + For_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end=""), input()
+
+Fif_kotoba = "dy+1dx=0, x=4.6时，y1=？; x=8.22时，y2=？（二つの解を書き込んでください）"
+Shuwei_Fif = len(Fif_kotoba) + 1
+for i in range(Shuwei_Fif):
+	print("\r" + Fif_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end=""), t.sleep(1)
+
+Keisan_Start = t.perf_counter()
+Answer = True
+while Answer:
+	y1=input("y1"+"=")
+	y2=input("y2"+"=")
+	if y1 in ["8.22"] and y2 in ["4.6"]:
+		Six_kotoba1 = "正解です，さすがあずさちゃんだ！"
+		Shuwei_Six1 = len(Six_kotoba1) + 1
+		for i in range(Shuwei_Six1):
+			print("\r" + Six_kotoba1[:i], end="")
+			t.sleep(0.2387)
+		print("\n", end=""), input()
+		break
+	else:
+		Six_kotoba2 = "答えが間違いかもしれない，もう一度試してみよう！"
+		Shuwei_Six2 = len(Six_kotoba2) + 1
+		for i in range(Shuwei_Six2):
+			print("\r" + Six_kotoba2[:i], end="")
+			t.sleep(0.2387)
+		print("\n", end="")
+		Six_kotoba3 = "ヒント：ふたつは関係あるの数字だ"
+		Shuwei_Six3 = len(Six_kotoba3) + 1
+		for i in range(Shuwei_Six3):
+			print("\r" + Six_kotoba3[:i], end="")
+			t.sleep(0.2387)
+		print("\n", end=""), input()
+	continue
+Keisan_End = t.perf_counter()
+t.sleep(0.48)
+
+Jikan = round(Keisan_End - Keisan_Start)
+Haoshi = str(Jikan)
+Sev_kotoba = "計算にかかった時間は" + Haoshi + "秒"
+Shuwei_Sev = len(Sev_kotoba) + 1
+for i in range(Shuwei_Sev):
+	print("\r"+Sev_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end=""), input()
+
+Eig_kotoba = "次はあずさたんと話したいんの言葉だ"
+Shuwei_Eig = len(Eig_kotoba) + 1
+for i in range(Shuwei_Eig):
+	print("\r" + Eig_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end=""), input()
+
+Nig_kotoba = "最初にあずさを気つけた時は、認めたくないけどさ、実はもう覚えてない。"
+Shuwei_Nig = len(Nig_kotoba) + 1
+for i in range(Shuwei_Nig):
+	print("\r" + Nig_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end="")
+
+Ten_kotoba = "だがあずさはいつも元気っぽいと活発気な感覚をくれた。"
+Shuwei_Ten = len(Ten_kotoba) + 1
+for i in range(Shuwei_Ten):
+	print("\r" + Ten_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end="")
+
+Ele_kotoba = "（その後は体がちょっと元気でわはいと知った，ご心配を許してくれ）"
+Shuwei_Ele = len(Ele_kotoba) + 1
+for i in range(Shuwei_Ele):
+	print("\r" + Ele_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end="")
+
+Twe_kotoba = "クラスメートをやさしいに対してることができるって。"
+Shuwei_Twe = len(Twe_kotoba) + 1
+for i in range(Shuwei_Twe):
+	print("\r" + Twe_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end="")
+
+Thir_kotoba = "すごくいいの第一イメージをくれたんだ。（今はちょっと”皮”に変わった）  ：）"
+Shuwei_Thir = len(Thir_kotoba) + 1
+for i in range(Shuwei_Thir):
+	print("\r" + Thir_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end="")
+
+Fourt_kotoba = "どんどん仲良くなるのはやはり“大写課程”のグループが作った後な。"
+Shuwei_Fourt = len(Fourt_kotoba) + 1
+for i in range(Shuwei_Fourt):
+	print("\r" + Fourt_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end="")
+
+Fift_kotoba = "君は興味がいっぱい同じの女の子と、俺は本当に知った。それとも勉強が上手くね。"
+Shuwei_Fift = len(Fift_kotoba) + 1
+for i in range(Shuwei_Fift):
+	print("\r" + Fift_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end="")
+
+Sixt_kotoba = "話はここまで，”だが俺たちの物語は今から動き出す！”（と勝手に思った、俺に殴らないわ）"
+Shuwei_Sixt = len(Sixt_kotoba) + 1
+for i in range(Shuwei_Sixt):
+	print("\r" + Sixt_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end="")
+
+Sevt_kotoba = "ご元気と文運を"
+Shuwei_Sevt = len(Sevt_kotoba) + 1
+for i in range(Shuwei_Sevt):
+	print("\r" + Sevt_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end="")
+input()
+
+Eigt_kotoba = "次はプレゼントの図像だ"
+Shuwei_Eigt = len(Eigt_kotoba) + 1
+for i in range(Shuwei_Eigt):
+	print("\r" + Eigt_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end="")
+
+t.sleep(1.5)
+T.setup(1366,768,75,17)
+
+T.penup()
+T.seth(270)
+T.fd(104)
+T.seth(180)
+T.fd(11)
+T.pendown()
+T.speed(1)
+T.pensize(4)
+T.colormode(255)
+T.pencolor((134, 94, 73))
+
+T.seth(66)
+for i in range(6):
+	T.lt(2)
+	T.fd(10)
+
+for i in range(6):
+	T.lt(2.5)
+	T.fd(10)
+
+
+T.lt(96.7)
+T.fd(5)
+T.rt(59)
+T.fd(7.5)
+
+T.lt(90)
+T.fd(8.4)
+T.rt(104)
+T.fd(13.7)
+T.lt(135)
+T.fd(15)
+for i in range(7):
+	T.rt(4)
+	T.fd(16)
+
+T.penup()
+T.rt(78.5)
+T.fd(23)
+T.rt(104.59)
+T.pendown()
+
+for i in range(7):
+	T.lt(3)
+	T.fd(13.9)    #准备画心
+
+T.penup()
+T.rt(94.92)
+T.fd(22)
+T.pendown()    #开始画心
+
+T.lt(180)
+T.fd(22)
+for i in range(2):
+	T.rt(8)
+	T.fd(21.5)
+
+	
+for i in range(2):
+	T.rt(14.59)
+	T.fd(6)
+
+for i in range(2):
+	T.rt(1.7)
+	T.fd(3)     #到达心左垂直线
+
+T.rt(18.57)
+T.fd(6)
+T.rt(16.44)
+T.fd(11)
+
+T.rt(15.09)
+T.fd(7)
+T.rt(5.47)
+T.fd(4)
+
+for i in range(2):
+	T.right(30.06)
+	T.fd(12)
+
+for i in range(2):
+	T.right(14)
+	T.fd(12)
+
+T.rt(3.7)
+T.fd(4)    #开始画右心
+
+T.lt(102.69)
+T.fd(14)    #减了三
+T.rt(17.11)
+T.fd(14)    #减了三
+T.rt(30)
+T.fd(14)
+T.rt(30.23)
+T.fd(16)
+T.rt(36.77)
+T.fd(19)
+T.rt(25.64)
+T.fd(18)
+T.rt(22.97)
+T.fd(14)
+T.rt(15.5)
+T.fd(12)
+T.rt(5.5)
+T.fd(12)
+T.rt(19.11)
+T.fd(12)
+t.sleep(0.37)
+T.hideturtle()
+
+T.penup()                                                                   #开始重画手
+T.goto(0,0)
+T.speed(10)
+
+T.seth(270)
+T.fd(104)
+T.seth(180)
+T.fd(11)
+
+#T.fillcolor((242,149,116))
+#T.begin_fill()
+
+T.seth(66)
+for i in range(6):
+	T.lt(2)
+	T.fd(10)
+
+for i in range(6):
+	T.lt(2.5)
+	T.fd(10)
+
+T.fillcolor((242,149,116))
+T.begin_fill()
+
+T.lt(96.7)
+T.fd(5)
+T.rt(59)
+T.fd(7.5)
+
+T.lt(90)
+T.fd(8.4)
+T.rt(104)
+T.fd(13.7)
+T.lt(135)
+T.fd(15)
+for i in range(1):
+	T.rt(4)
+	T.fd(12.5)
+
+#T.showturtle()
+
+T.rt(101.2)
+T.fd(22)
+for i in range(2):
+	T.rt(8)
+	T.fd(21.5)
+
+	
+for i in range(2):
+	T.rt(14.59)
+	T.fd(6)
+
+for i in range(2):
+	T.rt(1.7)
+	T.fd(3)     #到达心左垂直线
+
+T.rt(18.57)
+T.fd(6)
+T.rt(16.44)
+T.fd(11)
+
+T.rt(15.09)
+T.fd(7)
+T.rt(5.47)
+T.fd(4)
+
+for i in range(2):
+	T.right(30.06)
+	T.fd(12)
+
+for i in range(2):
+	T.right(14)
+	T.fd(12)
+
+T.rt(3.7)
+T.fd(4)    #开始画右心
+
+T.lt(102.69)
+T.fd(14)    #减了三
+T.rt(17.11)
+T.fd(14)    #减了三
+T.rt(30)
+T.fd(14)
+T.rt(30.23)
+T.fd(16)
+T.rt(36.77)
+T.fd(19)
+T.rt(25.64)
+T.fd(18)
+T.rt(22.97)
+T.fd(14)
+T.rt(15.5)
+T.fd(12)
+T.rt(5.5)
+T.fd(12)
+T.rt(19.11)
+T.fd(12)
+
+T.end_fill()                           #成功上色啦！！！！！！！！！！！！！！！！
+
+T.penup()
+T.goto(0,0)
+T.seth(270)
+T.fd(104)
+T.seth(180)
+T.fd(11)
+T.pendown()
+T.speed(10)
+T.pencolor((134, 94, 73))
+
+T.seth(66)
+for i in range(6):
+	T.lt(2)
+	T.fd(10)
+
+for i in range(6):
+	T.lt(2.5)
+	T.fd(10)
+
+
+T.lt(96.7)
+T.fd(5)
+T.rt(59)
+T.fd(7.5)
+
+T.lt(90)
+T.fd(8.4)
+T.rt(104)
+T.fd(13.7)
+T.lt(135)
+T.fd(15)
+for i in range(7):
+	T.rt(4)
+	T.fd(16)
+
+T.penup()
+T.rt(78.5)
+T.fd(23)
+T.rt(104.59)
+T.pendown()
+
+for i in range(7):
+	T.lt(3)
+	T.fd(13.9)    #准备画心
+
+T.penup()
+T.rt(94.92)
+T.fd(22)
+T.pendown()    #开始画心
+
+T.lt(180)
+T.fd(22)
+for i in range(2):
+	T.rt(8)
+	T.fd(21.5)
+
+	
+for i in range(2):
+	T.rt(14.59)
+	T.fd(6)
+
+for i in range(2):
+	T.rt(1.7)
+	T.fd(3)     #到达心左垂直线
+
+T.rt(18.57)
+T.fd(6)
+T.rt(16.44)
+T.fd(11)
+
+T.rt(15.09)
+T.fd(7)
+T.rt(5.47)
+T.fd(4)
+
+for i in range(2):
+	T.right(30.06)
+	T.fd(12)
+
+for i in range(2):
+	T.right(14)
+	T.fd(12)
+
+T.rt(3.7)
+T.fd(4)    #开始画右心
+
+T.lt(102.69)
+T.fd(14)    #减了三
+T.rt(17.11)
+T.fd(14)    #减了三
+T.rt(30)
+T.fd(14)
+T.rt(30.23)
+T.fd(16)
+T.rt(36.77)
+T.fd(19)
+T.rt(25.64)
+T.fd(18)
+T.rt(22.97)
+T.fd(14)
+T.rt(15.5)
+T.fd(12)
+T.rt(5.5)
+T.fd(12)
+T.rt(19.11)
+T.fd(12)
+T.done()
+
+t.sleep(1.5)
+input()
+t.sleep(1)
+
+Nigt_kotoba = "もしもいつか変なことが言っても、驚かないでね。"
+Shuwei_Nigt = len(Nigt_kotoba) + 1
+for i in range(Shuwei_Nigt):
+	print("\r" + Nigt_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end="")
+
+Twet_kotoba = "もうプロジェクトの終末に辿り着いた"
+Shuwei_Twet = len(Twet_kotoba) + 1
+for i in range(Shuwei_Twet):
+	print("\r" + Twet_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end="")
+
+Twetone_kotoba = "次のバージョンを楽しいみにしてなさい"
+Shuwei_Twetone = len(Twetone_kotoba) + 1
+for i in range(Shuwei_Twetone):
+	print("\r" + Twetone_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end="")
+
+ET=t.ctime()
+print(ET)
+t.sleep(10)
+print()
+Twettwo_kotoba = "彩蛋ありませんよ"
+Shuwei_Twettwo = len(Twettwo_kotoba) + 1
+for i in range(Shuwei_Twettwo):
+	print("\r" + Twettwo_kotoba[:i], end="")
+	t.sleep(0.2387)
+print("\n", end="")
+
+t.sleep(59)
+sys.exit()
